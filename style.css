@@ -57,7 +57,7 @@ h2 {
 
 /* Flash animations - one given by game and other by user */
 .flash {
-    background-color: #ffffff !important;
+    background-color: #ffffff !important; /*because of this !important -mo matter what other CSS says, set the background color to white*/
     color: #333;
     transform: scale(1.1);
 }
