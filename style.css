@@ -1,0 +1,91 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #e9ecef; 
+    color: #333;
+    padding: 2rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 0.3rem;
+}
+h2 {
+    font-size: 1.3rem;
+    color: #636e72;
+    margin-bottom: 2rem;
+}
+
+/* Button container layout */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Each row of buttons - line1 and 2*/ 
+.line-one, .line-two {
+    display: flex;
+    gap: 20px;
+}
+
+/* Colored buttons */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: solid 8px #2d3436;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+.yellow   { background-color: #feca57; }
+.red      { background-color: #ff6b6b; }
+.purple   { background-color: #a29bfe; }
+.green    { background-color: #1dd1a1; }
+
+/* Flash animations - one given by game and other by user */
+.flash {
+    background-color: #ffffff !important;
+    color: #333;
+    transform: scale(1.1);
+}
+.userflash {
+    background-color: #e0bbf9 !important;
+    color: #2d3436;
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+/* btn animation */
+.btn:hover {
+    transform: scale(1.035);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
